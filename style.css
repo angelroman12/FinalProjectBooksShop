@@ -9,17 +9,27 @@ body {
     background-image: linear-gradient( to left, rgb(244, 243, 247), rgb(170, 163, 143) 50%, rgb(244, 243, 247));
 }
 
-/* NavBar */
-
+/* ===============
+    Navbar style
+================== */
+    
 #navbar {
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(6, 6, 48);
-    padding: 0.6rem;
+    flex-direction: row;
+    background-color: rgb(131, 131, 156);
+    /* padding: 0.2rem; */
     position: sticky;
     top: 0;
     width: 100%;
+}
+
+.name-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #navbar button {
@@ -33,6 +43,10 @@ body {
     transition-duration: 350ms;
     font-size: 1rem;
     letter-spacing: 0.2rem;
+}
+#logo {
+    width: 40%;
+    height: 10%;
 }
 
 #navbar button:hover {
@@ -54,6 +68,7 @@ a {
     text-decoration: none;
     
 }
+
 .fas {
     color: rgb(255, 255, 255);
     font-size: 1.2rem;
@@ -65,18 +80,14 @@ a {
 
 }
 
-h1 .fas {
-    color: rgb(233, 157, 17);
-    font-size: 2.2rem;
-}
-
-/* Card style*/
-
+/* ================
+    Card style
+=================== */
 .card {
     border: 3px solid black;
     border-radius: 0.7rem;
     width: 14.15rem;
-    height: 25rem;
+    height: 26.2rem;
     text-align: center;    
     margin: auto;
     /* margin-bottom: 0px; */
@@ -109,10 +120,12 @@ h1 .fas {
 }
 
 
-/* Products div style*/
+/* ================
+    Products style
+=================== */
 
 #products {
-    width: 970px;
+    width: 960px;
     /* background-image: linear-gradient( to left, rgb(71, 35, 1), rgb(240, 124, 15) , rgb(240, 124, 15), rgb(71, 35, 1));  */
     margin: auto;
     padding: 10px;
@@ -135,7 +148,7 @@ h1 .fas {
     border-radius: 6px;
     transition-duration: 200ms;
     font-size: 1.1rem;
-    letter-spacing: 2px;
+    letter-spacing: 0.2rem;
 }
 
 .det:hover {
@@ -144,22 +157,28 @@ h1 .fas {
     padding: 2px 24px;
 }
 
-
-/* Details Container */
+/* ================
+    Container style
+=================== */
 
 #detailsContainer{
     height: 90vh;
 }
 
-/* Footer */
+/* ================
+    Footer  
+=================== */
 #main-footer {
     text-align: center;
-    background-color: rgb(6, 6, 48);
+    background-color: rgb(131, 131, 156);
     color: rgb(255, 251, 251);
     padding: 20px;
     margin-top: 3px;    
 }
 
+/* ===========================
+    Resposive style
+============================== */
 @media(max-width: 500px) {
     * {
         box-sizing: border-box;
@@ -178,12 +197,20 @@ h1 .fas {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        background-color: rgb(6, 6, 48);
+        background-color: rgb(131, 131, 156);
         padding: 2px;
         position: sticky;
         top: 0;
         width: 500px;
     }
+
+    
+    .name-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
     
     #navbar button {
         padding: 4px 10px;
@@ -196,6 +223,11 @@ h1 .fas {
         transition-duration: 150ms;
         font-size: 1.2rem;
         letter-spacing: 4px;
+
+    }
+    #logo {
+        width: 30%;
+        height: 10%;
     }
     #output {
         display: flex;
@@ -241,4 +273,24 @@ h1 .fas {
         width: 500px;    
     }
     
+}
+
+@media(min-width: 2100px) {
+    
+    #products {
+    width: 1200px;
+    /* background-image: linear-gradient( to left, rgb(71, 35, 1), rgb(240, 124, 15) , rgb(240, 124, 15), rgb(71, 35, 1));  */
+    margin: auto;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 8px;
+}
+    .shelf {
+    background-color:rgb(175, 86, 3);    
+    padding: 0.2rem;
+    margin: auto;
+    margin-bottom: 0.2rem;     
+    background-image: linear-gradient( to left, rgb(71, 35, 1), rgb(240, 124, 15) , rgb(240, 124, 15), rgb(71, 35, 1)); 
+}
+
 }
