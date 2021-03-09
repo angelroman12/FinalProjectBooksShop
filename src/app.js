@@ -1,34 +1,52 @@
-document.addEventListener('DOMContentLoaded', addbooks);
-function addbooks() {
-	fetch('http://localhost:3000/products')
-		.then((res) => {
-			return res.json();
-		})
-		.then((products) => {
-			let output = '';
-			products.map((product) => {
-                output +=
-	        	`<div class="shelf">
-				<div class="card">
-                <img src="${product.picture}">
-                <h4> ${product.author}</h4>
-                <h5>${product.title}</h5>
-                <p>${product.price}</p> 
-                <button class="det">Details</button>								
-				</div>
-				</div>
-                `;
-			});
-			document.getElementById('output').innerHTML += output;
-		});
+import { http } from './http.js';
+import { ui } from './ui.js';
+// Get Products on DOM load
+document.addEventListener('DOMContentLoaded', getProducts);
+
+function getProducts() {
+	// const http = new customHTTPMethods();
+	http
+		.get('http://localhost:3000/products')
+		.then((data) => ui.showProducts(data));
 }
 
+// Add product to db
+// document.getElementById('submit').addEventListener('click', addNewProduct);
 
+// function addNewProduct() {
+// 	const idNumber = document.getElementById('idNumber').value;
+// 	const img = document.getElementById('img').value;
+// 	const author = document.getElementById('author').value;
+// 	const title = document.getElementById('title').value;
+// 	const price = document.getElementById('price').value;
+// 	const pages = document.getElementById('pages').value;
+// 	const descriptionValue = document.getElementById('description').value;
 
-// class customHTTPMethods {
-//     async get('http://localhost:3000/products'){
-//         const response = await fetch('http://localhost:3000/products');
-//         const data = await response.json();
-//         return data;
-//     }
+// 	let product = {
+// 		title: idNumber,
+// 		img: img,
+// 		author: author,
+// 		price: price,
+// 		title: title,
+// 		pages: pages,
+// 		description: descriptionValue,
+// 	};
+
+// 	http
+// 		.post('http://localhost:3000/products', product)
+// 		.then((data) => getProducts());
 // }
+
+// document.getElementById('products').addEventListener('click', deleteProduct);
+
+// function deleteProduct(e) {
+// 	if (e.target.classList.contains('delete')) {
+// 		const id = e.target.id;
+// 		http
+// 			.delete(`http://localhost:3000/products/${id}`)
+// 			.then((data) => getProducts())
+// 			.catch('Error on delete!');
+// 	}
+// }
+
+

@@ -19,11 +19,9 @@ body {
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
-    background-color: rgb(131, 131, 156);
-    /* padding: 0.2rem; */
+    background-image: linear-gradient(to right, rgb(131, 131, 156), rgb(1, 1, 20)) ;
     position: sticky;
     top: 0;
-    width: 100%;
 }
 
 .name-logo {
@@ -32,47 +30,38 @@ body {
     justify-content: space-between;
 }
 
-#navbar button {
-    padding: 0.3rem 1rem;
-    font-size: 1.2rem;
-    border-radius: 0.5rem; 
-    margin: auto;
-    background-color: rgb(100, 223, 223);
-    cursor: pointer;
-    margin-right: 0.2rem;
-    transition-duration: 350ms;
-    font-size: 1rem;
-    letter-spacing: 0.2rem;
+.linkNav a{
+    color: rgb(100, 223, 223);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    
+}
+.linkNav a:hover{
+    text-decoration: underline;
 }
 #logo {
-    width: 40%;
-    height: 10%;
-}
-
-#navbar button:hover {
-    background-image: linear-gradient( to left, rgb(71, 35, 1), rgb(240, 124, 15) , rgb(240, 124, 15), rgb(71, 35, 1)); 
-    color: rgb(245, 245, 220);
-    /* padding: 4px 32px; */
+    width: 5rem;
+    height: 5rem;
 }
 
 #navbar h1 {
     color: rgb(100, 223, 223);
-    letter-spacing: 6px;
+    letter-spacing: 1.2rem;
     transition-duration: 400ms;
+    margin-left: 0.6rem;
+    font-size: 1.6rem;
 }
 #navbar h1:hover {
-    color: rgb(232, 157, 17);
-    
+    color: rgb(232, 157, 17);    
 }
 a {
-    text-decoration: none;
-    
+    text-decoration: none;    
 }
 
 .fas {
     color: rgb(255, 255, 255);
-    font-size: 1.2rem;
-    margin: auto;   
+    font-size: 1.5rem;
+    margin-right: 0.4rem;   
 }
 
 #navbar  button .fas:hover{
@@ -85,24 +74,28 @@ a {
 =================== */
 .card {
     border: 3px solid black;
-    border-radius: 0.7rem;
-    width: 14.15rem;
-    height: 26.2rem;
+    border-radius: 0.5rem;
+    width: 12.55rem;
+    height: 22.2rem;
     text-align: center;    
     margin: auto;
     /* margin-bottom: 0px; */
     margin-top: 1rem;
     margin-bottom: 0.5rem;
-    background-color: rgb(255, 248, 220);   
+    background-color: rgb(255, 255, 255);   
+}
+
+.card h4, h5, p, button {
+    margin-bottom: 0.4rem;
 }
 
 .card img{
-    height: 80%;
+    height: 70%;
     width: 100%;
     padding: 1rem;
     transition-duration: 250ms;
-    border-top-left-radius: 0.7rem;
-    border-top-right-radius: 0.7rem;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
 }
 
 .card h4 {
@@ -111,13 +104,6 @@ a {
 .card img:hover{
     padding: 0rem;
 }
-.shelf {
-    background-color:rgb(175, 86, 3);    
-    padding: 0.2rem;
-    margin: auto;
-    margin-bottom: 0.2rem;     
-    background-image: linear-gradient( to left, rgb(71, 35, 1), rgb(240, 124, 15) , rgb(240, 124, 15), rgb(71, 35, 1)); 
-}
 
 
 /* ================
@@ -125,11 +111,11 @@ a {
 =================== */
 
 #products {
-    width: 960px;
+    width: 860px;
     /* background-image: linear-gradient( to left, rgb(71, 35, 1), rgb(240, 124, 15) , rgb(240, 124, 15), rgb(71, 35, 1));  */
     margin: auto;
     padding: 10px;
-    margin-top: 6px;
+    margin-top: px;
     border-radius: 8px;
 }
 
@@ -137,7 +123,7 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .det {
@@ -147,7 +133,7 @@ a {
     cursor: pointer;
     border-radius: 6px;
     transition-duration: 200ms;
-    font-size: 1.1rem;
+    font-size: 1rem;
     letter-spacing: 0.2rem;
 }
 
@@ -161,7 +147,7 @@ a {
     Container style
 =================== */
 
-#detailsContainer{
+#detailsContainer, #cartContainer{
     height: 90vh;
 }
 
@@ -175,6 +161,72 @@ a {
     padding: 20px;
     margin-top: 3px;    
 }
+
+/* ==================
+        Admin Page
+===================== */
+
+#bookInput{
+    display: flex;
+    flex-direction: column ;
+    width: 50rem;
+    margin: auto;
+    margin-top: 1rem;    
+}
+
+.adminInput {
+    height: 2rem;
+    margin-top: 0.6rem;
+}
+
+#description{
+    resize: none;
+    height: 4rem;
+    margin-bottom: 0.4rem;
+}
+
+#submit {
+    height: 1.8rem;
+    cursor: pointer;
+}
+
+.adminTable {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50rem;
+    margin: auto;
+    margin-top: 1rem;  
+    border: 1px solid black;
+}
+
+.adminTable h3{
+    margin-left: 2rem;
+}
+
+.adminTable h4{
+    margin:auto;
+    text-decoration: underline;
+}
+
+.adminTable h5 {
+    margin-right: 2rem;
+}
+
+.adminTable button {
+    background-color: rgb(100, 223, 223);
+    padding: 0.5rem 1.5rem;
+    margin-right: 2rem;
+    border-radius: 4px;
+}
+
+.imgAdmin, .img{
+    height:5rem;
+    width: 3rem;
+    
+}
+
 
 /* ===========================
     Resposive style
@@ -204,6 +256,9 @@ a {
         width: 500px;
     }
 
+    .card h4, h5, p, button {
+        margin-bottom: 0rem;
+    }
     
     .name-logo {
     display: flex;
@@ -213,7 +268,7 @@ a {
 
     
     #navbar button {
-        padding: 4px 10px;
+        padding: 4px 6px;
         font-size: 1.2rem;
         border-radius: 6px; 
         margin: auto;
@@ -226,8 +281,8 @@ a {
 
     }
     #logo {
-        width: 30%;
-        height: 10%;
+        width: 5rem;
+        height: 5rem;
     }
     #output {
         display: flex;
@@ -247,7 +302,7 @@ a {
         border: 1px solid black;
         border-radius: 4px;
         width: 15rem;
-        height: 27em;
+        height: 26rem;
         text-align: center;
         padding: 2px;
         /* margin: auto; */
@@ -275,22 +330,16 @@ a {
     
 }
 
-@media(min-width: 2100px) {
+@media(min-width: 1500px) {
     
     #products {
-    width: 1200px;
+    width: 1100px;
     /* background-image: linear-gradient( to left, rgb(71, 35, 1), rgb(240, 124, 15) , rgb(240, 124, 15), rgb(71, 35, 1));  */
     margin: auto;
     padding: 10px;
     margin-top: 6px;
     border-radius: 8px;
 }
-    .shelf {
-    background-color:rgb(175, 86, 3);    
-    padding: 0.2rem;
-    margin: auto;
-    margin-bottom: 0.2rem;     
-    background-image: linear-gradient( to left, rgb(71, 35, 1), rgb(240, 124, 15) , rgb(240, 124, 15), rgb(71, 35, 1)); 
-}
+    
 
 }

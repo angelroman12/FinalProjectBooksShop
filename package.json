@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Final Project - Online Books Shop ",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start-db": "json-server --watch api/db.json",
+    "start": "serve"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/angelroman12/FinalProjectBooksShop.git"
@@ -26,6 +29,8 @@
   },
   "homepage": "https://github.com/angelroman12/FinalProjectBooksShop#readme",
   "dependencies": {
+    "bootstrap": "^4.6.0",
+    "font-awesome": "^4.7.0",
     "json-server": "^0.16.3"
   }
 }

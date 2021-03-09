@@ -19,4 +19,8 @@ Angel Roman
 
 `$ json-server --watch api/db.json`
 
+### Local developer
+ npm install -g --save serve
+ serve
 
+ 
