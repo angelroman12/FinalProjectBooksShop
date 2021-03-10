@@ -1,14 +1,14 @@
 class UI {
-	constructor() {
-		this.productsDiv = document.getElementById('output');
-		this.idNumber = document.getElementById('idNumber');
-		this.img = document.getElementById('img');
+	constructor() {		
+		this.productsDiv = document.getElementById('output');		
+		this.picture = document.getElementById('picture');
 		this.author = document.getElementById('author');
 		this.title = document.getElementById('title');
-		this.price = document.getElementById('price');
-		this.pages = document.getElementById('pages');
+		this.price = document.getElementById('price');		
 		this.descriptionValue = document.getElementById('description');
 	}
+
+	// Get products on index page
 
 	showProducts(products) {
 		let output = '';
@@ -28,6 +28,8 @@ class UI {
 		});
 	}
 
+	// Get products on admin page 
+	
 	showProductsAdmin(products) {
 		let output = '';
 		products.forEach((product) => {
@@ -44,6 +46,7 @@ class UI {
 			this.productsDiv.innerHTML = output;
 		});
 	}
+		
 }
 
 export const ui = new UI();

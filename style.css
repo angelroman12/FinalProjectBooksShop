@@ -32,13 +32,17 @@ body {
 
 .linkNav a{
     color: rgb(100, 223, 223);
-    font-size: 1.5rem;
-    margin-right: 1rem;
-    
+    font-size: 1.3rem;
+    margin-right: 1rem;    
+    transition-duration: 250ms;
+    letter-spacing: 0.2rem;;
 }
+
 .linkNav a:hover{
     text-decoration: underline;
+    
 }
+
 #logo {
     width: 5rem;
     height: 5rem;
@@ -46,22 +50,24 @@ body {
 
 #navbar h1 {
     color: rgb(100, 223, 223);
-    letter-spacing: 1.2rem;
+    letter-spacing: 0.8rem;
     transition-duration: 400ms;
     margin-left: 0.6rem;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
+
 #navbar h1:hover {
     color: rgb(232, 157, 17);    
 }
+
 a {
     text-decoration: none;    
 }
 
 .fas {
     color: rgb(255, 255, 255);
-    font-size: 1.5rem;
-    margin-right: 0.4rem;   
+    font-size: 1.3rem;
+    margin-right: 0.2rem;   
 }
 
 #navbar  button .fas:hover{
@@ -73,7 +79,7 @@ a {
     Card style
 =================== */
 .card {
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 0.5rem;
     width: 12.55rem;
     height: 22.2rem;
@@ -86,13 +92,13 @@ a {
 }
 
 .card h4, h5, p, button {
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.2rem;
 }
 
 .card img{
     height: 70%;
     width: 100%;
-    padding: 1rem;
+    padding: 0.8rem;
     transition-duration: 250ms;
     border-top-left-radius: 0.4rem;
     border-top-right-radius: 0.4rem;
@@ -111,19 +117,16 @@ a {
 =================== */
 
 #products {
-    width: 860px;
-    /* background-image: linear-gradient( to left, rgb(71, 35, 1), rgb(240, 124, 15) , rgb(240, 124, 15), rgb(71, 35, 1));  */
+    width: 860px;    
     margin: auto;
-    padding: 10px;
-    margin-top: px;
+    padding: 10px;    
     border-radius: 8px;
 }
 
 #output {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    /* margin: auto; */
+    flex-wrap: wrap;    
 }
 
 .det {
@@ -162,21 +165,32 @@ a {
     margin-top: 3px;    
 }
 
+
 /* ==================
         Admin Page
 ===================== */
 
+#adminContainer #output{
+    width: 60rem;
+    margin: auto;
+}
+#adminContainer h2 {
+    display: none;
+}
+
 #bookInput{
     display: flex;
     flex-direction: column ;
-    width: 50rem;
+    width: 30rem;
     margin: auto;
-    margin-top: 1rem;    
+    margin-top: 0.4rem; 
+     
 }
 
 .adminInput {
     height: 2rem;
     margin-top: 0.6rem;
+    border-radius: 0.2rem;  
 }
 
 #description{
@@ -187,159 +201,83 @@ a {
 
 #submit {
     height: 1.8rem;
-    cursor: pointer;
+    cursor: pointer;  
+    background-color: rgb(81, 82, 82);
+    color: beige;
+    font-size: 1rem;
+    letter-spacing: 0.6rem;
 }
 
-.adminTable {
-    
+.adminTable {    
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 50rem;
+    flex-wrap: wrap;
+    width: 64rem;
     margin: auto;
-    margin-top: 1rem;  
+    margin-top: 0.4rem;  
     border: 1px solid black;
+    border-left: 2rem solid gray;
+    border-right: 2rem solid gray;
 }
 
 .adminTable h3{
     margin-left: 2rem;
+ 
 }
 
 .adminTable h4{
     margin:auto;
     text-decoration: underline;
+    color: rgb(158, 1, 1);
+    letter-spacing: 0.2rem;
 }
 
 .adminTable h5 {
     margin-right: 2rem;
+   
 }
 
 .adminTable button {
-    background-color: rgb(100, 223, 223);
+    background-color: rgb(144, 228, 228);
     padding: 0.5rem 1.5rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
     border-radius: 4px;
+    cursor: pointer;
+    transition-duration: 250ms;
+}
+.adminTable button:hover{
+    padding: 0.5rem 1.7rem;
+    background-color: rgb(110, 4, 4);
+    color: aquamarine;
+    font-size: 0.9rem;
 }
 
 .imgAdmin, .img{
     height:5rem;
-    width: 3rem;
-    
+    width: 3.5rem;    
 }
-
 
 /* ===========================
     Resposive style
-============================== */
-@media(max-width: 500px) {
-    * {
-        box-sizing: border-box;
-        margin: 0px;
-        padding: 0px;
-    }
-    
-    
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: rgb(212, 207, 198);
-        /* width: 100%; */
-    }
-
-    #navbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        background-color: rgb(131, 131, 156);
-        padding: 2px;
-        position: sticky;
-        top: 0;
-        width: 500px;
-    }
-
-    .card h4, h5, p, button {
-        margin-bottom: 0rem;
-    }
-    
-    .name-logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    }
-
-    
-    #navbar button {
-        padding: 4px 6px;
-        font-size: 1.2rem;
-        border-radius: 6px; 
-        margin: auto;
-        background-color: rgb(100, 223, 223);
-        cursor: pointer;
-        margin-right: 2px;
-        transition-duration: 150ms;
-        font-size: 1.2rem;
-        letter-spacing: 4px;
-
-    }
-    #logo {
-        width: 5rem;
-        height: 5rem;
-    }
-    #output {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin: auto;
-    }
-
-    #products {
-        width: 500px;
-        background-color: rgb(37, 37, 37);
-        margin: auto;
-        padding: 2px;
-    
-    }
-    .card {
-        border: 1px solid black;
-        border-radius: 4px;
-        width: 15rem;
-        height: 26rem;
-        text-align: center;
-        padding: 2px;
-        /* margin: auto; */
-        margin-bottom: 2px;
-        background-color: cornsilk;
-    }
-    
-    .card img{
-        height: 80%;
-        width: 100%;
-    }
-    
-    .card h4 {
-        text-decoration: underline;
-    }   
-    
-    #main-footer {
-        text-align: center;
-        background-color: rgb(6, 6, 48);
-        color: rgb(255, 251, 251);
-        padding: 20px;
-        margin-top: 3px;
-        width: 500px;    
-    }
-    
-}
+/*  */
 
 @media(min-width: 1500px) {
     
     #products {
     width: 1100px;
-    /* background-image: linear-gradient( to left, rgb(71, 35, 1), rgb(240, 124, 15) , rgb(240, 124, 15), rgb(71, 35, 1));  */
     margin: auto;
     padding: 10px;
     margin-top: 6px;
     border-radius: 8px;
-}
-    
+    }
+
+    .linkNav a{
+    color: rgb(100, 223, 223);
+    font-size: 1.4rem;
+    margin-right: 1rem;    
+    transition-duration: 250ms;
+    letter-spacing: 0.4rem;;
+    }
 
 }

@@ -1,0 +1,168 @@
+@media(max-width: 500px) {
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+        
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(212, 207, 198);
+        /* width: 100%; */
+    }
+
+    #navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgb(131, 131, 156);
+        padding: 2px;
+        position: sticky;
+        top: 0;
+        width: 500px;
+    }
+
+    .card h4, h5, p, button {
+        margin-bottom: 0rem;
+    }
+    
+    .name-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    .linkNav a{
+        color: rgb(100, 223, 223);
+        font-size: 1.3rem;          
+        transition-duration: 250ms;
+        letter-spacing: 0.2rem;
+        margin: auto;
+    }
+   
+    #logo {
+        width: 5rem;
+        height: 5rem;
+        margin: auto;
+    }
+    #output {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    #products {
+        width: 100%;
+        background-color: rgb(37, 37, 37);
+        margin: auto;
+        padding: 2px;
+    
+    }
+    .card {
+        border: 1px solid rgb(194, 72, 72);
+        border-radius: 4px;
+        width: 15rem;
+        height: 26rem;
+        text-align: center;
+        padding: 2px;
+        /* margin: auto; */
+        margin-bottom: 2px;
+        background-color: cornsilk;
+    }
+    
+    .card img{
+        height: 80%;
+        width: 100%;
+    }
+    
+    .card h4 {
+        text-decoration: underline;
+    }   
+    
+    #main-footer {
+        text-align: center;
+        background-color: rgb(6, 6, 48);
+        color: rgb(255, 251, 251);
+        padding: 20px;
+        margin-top: 3px;
+        width: 500px;    
+    }
+    
+    /* ======================
+         Admin Page
+    ======================== */
+
+
+    #adminContainer #output{
+        width: 500px;
+        margin: auto;
+    }
+    #adminContainer h2 {
+        display: none;
+       
+    }
+    
+    #bookInput{
+        display: flex;
+        flex-direction: column ;
+        width: 20rem;
+        margin: auto;
+        margin-top: 0.4rem; 
+        
+         
+    }
+    
+    .adminInput {
+        height: 2rem;
+        margin-top: 0.6rem;
+        border-radius: 0.2rem;  
+    }
+    
+    #description{
+        resize: none;
+        height: 4rem;
+        margin-bottom: 0.4rem;
+    }
+    
+    #submit {
+        height: 1.8rem;
+        cursor: pointer;  
+    
+    }
+    
+    .adminTable {    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 10rem;        
+        margin-top: 0.4rem;  
+        border: 1px solid black;
+        height: 16rem;
+        text-align: center;
+    }
+    
+    .adminTable h3, h4, h5{
+        margin: auto;
+    }
+    
+    .adminTable h4{
+        margin: 0.2rem;
+        text-decoration: underline;
+    }
+    
+        
+    .adminTable button {
+        background-color: rgb(100, 223, 223);
+        padding: 0.5rem 1.5rem;
+        margin: auto;
+        border-radius: 4px;        
+    }
+    
+    .imgAdmin, .img{
+        height:5rem;
+        width: 3rem;
+        margin-top: 1rem;        
+    }
+}

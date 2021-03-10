@@ -1,19 +1,20 @@
 import { http } from './http.js';
 import { ui } from './ui.js';
+// Load products 
 document.addEventListener('DOMContentLoaded', getProducts);
 
 function getProducts() {
-	// const http = new customHTTPMethods();
 	http
 		.get('http://localhost:3000/products')
 		.then((data) => ui.showProductsAdmin(data));
 }
 
+// Add new product 
 document.getElementById('submit').addEventListener('click', addNewProduct);
 
 function addNewProduct() {
 
-	const img = document.getElementById('img').value;
+	const picture = document.getElementById('picture').value;
 	const author = document.getElementById('author').value;
 	const title = document.getElementById('title').value;
 	const price = document.getElementById('price').value;
@@ -22,7 +23,7 @@ function addNewProduct() {
 
 	let product = {
 		
-		img: img,
+		picture: picture,
 		author: author,
 		price: price,
 		title: title,
@@ -32,10 +33,10 @@ function addNewProduct() {
 
 	http
 		.post('http://localhost:3000/products', product)
-		.then((data) => getProducts());
+		.then((data) => getProducts());		
 }
 
-
+// Delete product
 document.getElementById('output').addEventListener('click', deleteProduct);
 
 function deleteProduct(e) {
@@ -45,5 +46,5 @@ function deleteProduct(e) {
 			.delete(`http://localhost:3000/products/${id}`)
 			.then((data) => getProducts())
 			.catch('Error on delete!');
-	}
+	}	
 }
