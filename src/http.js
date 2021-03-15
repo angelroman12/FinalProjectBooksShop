@@ -27,6 +27,7 @@ class customHTTPMethods {
 		const data = await 'Product deleted ...';
 		return data;
 	}
+
 }
 
 export const http = new customHTTPMethods();

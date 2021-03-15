@@ -6,7 +6,7 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: linear-gradient( to left, rgb(244, 243, 247), rgb(170, 163, 143) 50%, rgb(244, 243, 247));
+    background-color: rgb(204, 202, 209);
 }
 
 /* ===============
@@ -34,13 +34,13 @@ body {
     color: rgb(100, 223, 223);
     font-size: 1.3rem;
     margin-right: 1rem;    
-    transition-duration: 250ms;
-    letter-spacing: 0.2rem;;
+    transition-duration: 900ms;
+    letter-spacing: 0.1rem;
 }
 
 .linkNav a:hover{
     text-decoration: underline;
-    
+    letter-spacing: 0.2rem;    
 }
 
 #logo {
@@ -81,18 +81,19 @@ a {
 .card {
     border: 2px solid black;
     border-radius: 0.5rem;
+    border-left: 4px solid black;
+    border-top: 3px solid black;
     width: 12.55rem;
     height: 22.2rem;
     text-align: center;    
-    margin: auto;
-    /* margin-bottom: 0px; */
+    margin: auto;    
     margin-top: 1rem;
     margin-bottom: 0.5rem;
-    background-color: rgb(255, 255, 255);   
+    background-color: rgb(241, 228, 212);   
 }
 
 .card h4, h5, p, button {
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.3rem;
 }
 
 .card img{
@@ -103,12 +104,12 @@ a {
     border-top-left-radius: 0.4rem;
     border-top-right-radius: 0.4rem;
 }
+.card img:hover{
+    padding: 0rem;
+}
 
 .card h4 {
     text-decoration: underline;
-}
-.card img:hover{
-    padding: 0rem;
 }
 
 
@@ -130,27 +131,27 @@ a {
 }
 
 .det {
-    background-color: rgb(205, 231, 255);
-    padding: 0px 20px;
-    background-color: rgb(100, 223, 223);
+    background-color: rgb(250, 249, 249);
+    padding: 0.25rem 2.4rem;
+    color: rgb(204, 9, 9);
     cursor: pointer;
     border-radius: 6px;
-    transition-duration: 200ms;
-    font-size: 1rem;
-    letter-spacing: 0.2rem;
+    transition-duration: 400ms;
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;    
 }
 
 .det:hover {
     background-color: rgb(233, 157, 17);
     color: black;
-    padding: 2px 24px;
+   
 }
 
 /* ================
     Container style
 =================== */
 
-#detailsContainer, #cartContainer{
+#cartContainer{
     height: 90vh;
 }
 
@@ -161,8 +162,8 @@ a {
     text-align: center;
     background-color: rgb(131, 131, 156);
     color: rgb(255, 251, 251);
-    padding: 20px;
-    margin-top: 3px;    
+    padding: 2rem;     
+    margin-top: 0.4rem;
 }
 
 
@@ -200,14 +201,19 @@ a {
 }
 
 #submit {
-    height: 1.8rem;
+    height: 2.2rem;
     cursor: pointer;  
     background-color: rgb(81, 82, 82);
     color: beige;
     font-size: 1rem;
     letter-spacing: 0.6rem;
+    transition-duration: 300ms;
 }
-
+#submit:hover{
+    height: 2.4rem;
+    color: rgb(81, 82, 82);
+    background-color:rgb(144, 228, 228);
+}
 .adminTable {    
     display: flex;
     flex-direction: row;
@@ -219,6 +225,7 @@ a {
     border: 1px solid black;
     border-left: 2rem solid gray;
     border-right: 2rem solid gray;
+    background-color: beige;
 }
 
 .adminTable h3{
@@ -258,9 +265,116 @@ a {
     width: 3.5rem;    
 }
 
+/* ========================
+        Details style 
+==========================*/
+
+#detailsContainer #output{     
+    width: 66rem;   
+    background-color: rgb(224, 220, 215);   
+    text-align: center;
+    margin: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.bookPic{   
+    margin: 1rem;
+    border-radius: 0.5rem;
+    width: 18rem;
+    height: 28.28rem;
+    text-align: center;   
+    background-color: rgb(224, 220, 215);
+}
+.bookPic img{
+    height: 110%;
+    width: 110%;
+    padding: 1.2rem;
+    transition-duration: 250ms;
+}
+.bookPic img:hover {
+    padding: 0%;
+}
+
+.bookPic div {
+    position: absolute;
+    top: 9rem;
+    background-color: rgb(2, 68, 2);
+    padding: 0.3rem 0.8rem;
+    color: bisque;
+}
+.bookDetails {
+    margin: auto;
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin-top: 2rem;
+}
+.bookDetails span {
+    color: rgb(224, 217, 217);
+    font-size: 1.1rem;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    background-color: rgb(2, 48, 48);
+    padding: 0.2rem 0.8rem;
+    border-radius: 0.3rem;
+}
+.bookDetails h3{
+    margin: 2rem;
+    color: rgb(82, 82, 156);
+    letter-spacing: 0.2rem;   
+}
+
+.picAndDetails {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.bookDescription{
+    margin: auto;  
+    width: 40rem;
+}
+.bookDescription h4 {
+    text-align: center;
+    margin-bottom: 1rem; 
+    margin-top: 1rem;
+    background-color: rgb(91, 105, 105); 
+    color: cornsilk;
+    padding: 0.4rem 1rem; 
+    letter-spacing: 0.8rem;    
+}
+.bookDescription p{
+    font-size: 1.1rem;
+
+}
+.bookDescription button {
+    padding: 0.5rem 2rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+    background-color: rgb(2, 48, 48);
+    color: cornsilk;
+    letter-spacing: 0.3rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+.bookDescription button:hover{
+    background-color: rgb(5, 128, 5);
+    /* letter-spacing: 0.4rem;
+    font-size: 1.1rem; */
+}
+
+.bookDescription i {
+    margin-left: 0.6rem;
+    font-size: 1.1rem;
+}
 /* ===========================
     Resposive style
-/*  */
+/*  =====================*/
 
 @media(min-width: 1500px) {
     
@@ -276,8 +390,32 @@ a {
     color: rgb(100, 223, 223);
     font-size: 1.4rem;
     margin-right: 1rem;    
-    transition-duration: 250ms;
+    transition-duration: 850ms;
     letter-spacing: 0.4rem;;
     }
 
+    
+    .linkNav a:hover{
+    text-decoration: underline;
+    letter-spacing: 0.5rem;    
+    }
+
+    #detailsContainer #output{     
+        width: 76rem;   
+        background-color: rgb(224, 220, 215);
+        padding: 1rem;
+        text-align: center;
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .bookPic{   
+        border-radius: 0.5rem;
+        width: 25rem;
+        height: 32.28rem;
+        text-align: center;   
+        margin-bottom: 0.5rem;
+        background-color: rgb(224, 220, 215);
+    }
 }
