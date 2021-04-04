@@ -6,7 +6,7 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(204, 202, 209);
+    background-color: #ddebe0;
 }
 
 /* ===============
@@ -19,9 +19,11 @@ body {
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
-    background-image: linear-gradient(to right, rgb(131, 131, 156), rgb(1, 1, 20)) ;
+    background-color: cadetblue;
     position: sticky;
     top: 0;
+    padding: 0.8rem;
+   
 }
 
 .name-logo {
@@ -29,28 +31,26 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-
-.linkNav a{
-    color: rgb(100, 223, 223);
+#admin, #cart {
+    color: #fdfdfd
+}
+.linkNav a{   
     font-size: 1.3rem;
     margin-right: 1rem;    
-    transition-duration: 900ms;
-    letter-spacing: 0.1rem;
+    transition-duration: 900ms;    
 }
 
 .linkNav a:hover{
-    text-decoration: underline;
-    letter-spacing: 0.2rem;    
+    text-decoration: underline;     
 }
 
 #logo {
-    width: 5rem;
-    height: 5rem;
+    width: 14rem;
+    height: 2.5rem;
 }
 
 #navbar h1 {
-    color: rgb(100, 223, 223);
-    letter-spacing: 0.8rem;
+    color:#fe0000;   
     transition-duration: 400ms;
     margin-left: 0.6rem;
     font-size: 1.5rem;
@@ -71,7 +71,7 @@ a {
 }
 
 #navbar  button .fas:hover{
-    color: rgb(6, 6, 48);
+    color: rgb(18, 18, 209);
 
 }
 
@@ -81,15 +81,15 @@ a {
 .card {
     border: 2px solid black;
     border-radius: 0.5rem;
-    border-left: 4px solid black;
+    border-left: 6px solid black;
     border-top: 3px solid black;
-    width: 12.55rem;
-    height: 22.2rem;
+    width: 12.05rem;
+    height: 21.2rem;
     text-align: center;    
     margin: auto;    
     margin-top: 1rem;
     margin-bottom: 0.5rem;
-    background-color: rgb(241, 228, 212);   
+    background-color: #ebda7a;   
 }
 
 .card h4, h5, p, button {
@@ -131,14 +131,15 @@ a {
 }
 
 .det {
-    background-color: rgb(250, 249, 249);
-    padding: 0.25rem 2.4rem;
-    color: rgb(204, 9, 9);
+    background-color: rgb(221, 221, 221);
+    padding: 0.1rem 2rem;    
     cursor: pointer;
     border-radius: 6px;
     transition-duration: 400ms;
     font-size: 1.2rem;
-    letter-spacing: 0.5rem;    
+    letter-spacing: 0.2rem;    
+    color: #093131;
+    margin-bottom: 1rem;
 }
 
 .det:hover {
@@ -160,7 +161,7 @@ a {
 =================== */
 #main-footer {
     text-align: center;
-    background-color: rgb(131, 131, 156);
+    background-color: cadetblue;
     color: rgb(255, 251, 251);
     padding: 2rem;     
     margin-top: 0.4rem;
@@ -270,20 +271,44 @@ a {
 ==========================*/
 
 #detailsContainer #output{     
-    width: 66rem;   
-    background-color: rgb(224, 220, 215);   
+    width: 70rem;   
+    background-color: #ebda7a;   
     text-align: center;
     margin: auto;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+    height: 80vh;
+    color: rgb(3, 27, 27);
 }
+/* ==============
+    Divs style          
+=============== */
+
+.details {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;   
+    margin: auto;
+    flex-direction: row;
+}
+.bookDescription{
+    width: 36rem;
+    margin: 4rem;
+}
+
+/* =====
+        Img style
+======= */
+
 .bookPic{   
-    margin: 1rem;
+    margin: auto;
     border-radius: 0.5rem;
-    width: 18rem;
-    height: 28.28rem;
+    width: 15rem;
+    height: 23.28rem;
     text-align: center;   
-    background-color: rgb(224, 220, 215);
+    background-color: #ebda7a;
+    margin-right: 2rem;
+
 }
 .bookPic img{
     height: 110%;
@@ -297,80 +322,47 @@ a {
 
 .bookPic div {
     position: absolute;
-    top: 9rem;
-    background-color: rgb(2, 68, 2);
+    top: 10rem;
+    background-color: #3e6308;
     padding: 0.3rem 0.8rem;
     color: bisque;
 }
-.bookDetails {
-    margin: auto;
-    display: flex;
-    flex-direction: row;  
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap; 
-    margin-top: 2rem;
+
+/* ============ */
+
+.bookDetails h5 {
+    margin-bottom: 2rem;    
+    padding: 0.1rem;
+    text-align: left;
 }
 .bookDetails span {
-    color: rgb(224, 217, 217);
-    font-size: 1.1rem;
-    letter-spacing: 0.2rem;
-    text-decoration: none;
-    background-color: rgb(2, 48, 48);
-    padding: 0.2rem 0.8rem;
-    border-radius: 0.3rem;
+    text-decoration: underline;
+    font-size: 0.95rem;
 }
-.bookDetails h3{
-    margin: 2rem;
-    color: rgb(82, 82, 156);
-    letter-spacing: 0.2rem;   
-}
-
-.picAndDetails {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin: auto;
-}
-
-.bookDescription{
-    margin: auto;  
-    width: 40rem;
-}
-.bookDescription h4 {
-    text-align: center;
-    margin-bottom: 1rem; 
-    margin-top: 1rem;
-    background-color: rgb(91, 105, 105); 
-    color: cornsilk;
-    padding: 0.4rem 1rem; 
-    letter-spacing: 0.8rem;    
-}
-.bookDescription p{
-    font-size: 1.1rem;
-
-}
-.bookDescription button {
-    padding: 0.5rem 2rem;
-    margin-top: 2rem;
-    font-size: 1rem;
-    background-color: rgb(2, 48, 48);
-    color: cornsilk;
-    letter-spacing: 0.3rem;
-    border-radius: 0.3rem;
+.btn {
+    padding: 0.4rem 2.2rem;
+    background-color: cadetblue;
     cursor: pointer;
-    transition-duration: 300ms;
+    margin-top: 1rem;
+    color: #ddebe0;
+    font-size: 1rem;
+    border-radius: 6px;
+    transition-duration: 400ms;
+    letter-spacing: 0.2rem;
 }
-.bookDescription button:hover{
-    background-color: rgb(5, 128, 5);
-    /* letter-spacing: 0.4rem;
-    font-size: 1.1rem; */
+.btn:hover{
+    background-color: #3e6308;
 }
-
 .bookDescription i {
     margin-left: 0.6rem;
     font-size: 1.1rem;
+}
+.bookDescription p {
+    font-size: 0.9rem;
+}
+.bookDescription h5 {
+    font-size: 1rem;
+    text-decoration: underline;
 }
 /* ===========================
     Resposive style
@@ -385,19 +377,18 @@ a {
     margin-top: 6px;
     border-radius: 8px;
     }
-
+    #navbar {
+        background-color: cadetblue;
+    }
     .linkNav a{
     color: rgb(100, 223, 223);
     font-size: 1.4rem;
     margin-right: 1rem;    
-    transition-duration: 850ms;
-    letter-spacing: 0.4rem;;
+    transition-duration: 850ms;    
     }
-
     
     .linkNav a:hover{
-    text-decoration: underline;
-    letter-spacing: 0.5rem;    
+    text-decoration: underline;    
     }
 
     #detailsContainer #output{     
@@ -417,5 +408,18 @@ a {
         text-align: center;   
         margin-bottom: 0.5rem;
         background-color: rgb(224, 220, 215);
+    }
+    .card {
+        border: 2px solid black;
+        border-radius: 0.5rem;
+        border-left: 6px solid black;
+        border-top: 3px solid black;
+        width: 12.05rem;
+        height: 21.2rem;
+        text-align: center;    
+        margin: auto;    
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        background-color: #e4dbaa;   
     }
 }

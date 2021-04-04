@@ -5,7 +5,7 @@
       "picture": "images/adolescentul.jpg",
       "author": "F. M. Dostoievski",
       "title": "Adolescentul",
-      "price": "30.99 RON",      
+      "price": "30.99 RON",
       "stoc": "In stoc",
       "pages": 664,
       "coperta": "Brosata",
@@ -54,17 +54,6 @@
       "stoc": "Stoc epuizat",
       "coperta": "Brosata",
       "details": "Trilogia secolului urmareste destinul a cinci familii care-si croiesc destinele catre veacul XX. In Capatul vesniciei ele se gasesc intr-o epoca a marilor framantari sociale, politice si economice din deceniile 6-8, in valtoarea asasinatelor si a miscarilor politice, trecand din Vietnam la Zidul Berlinului, de la criza rachetelor din Cuba la revolutie si rock. Asa cum si-a obisnuit cititorii, Ken Follett isi documenteaza cu seriozitate fundalul istoric al cartilor sale, redandu-l cu acuratete si propunand personaje bogate in nuante si emotii. Cu iscusinta de maestru, el ne aduce inaintea ochilor o lume pe care credeam ca o cunoastem, dar care acum nu va mai fi niciodata aceeasi."
-    },
-    {
-      "id": 6,
-      "picture": "images/cei_frumosi_si_blestemati.jpg",
-      "author": "F. Scott Fitzgerald",
-      "title": "Cei Frumosi si blestemati",
-      "price": "20.55 RON",
-      "pages": 444,
-      "stoc": "Stoc epuizat",
-      "coperta": "Brosata",
-      "details": "Cei frumosi si blestemati este, printre altele, un studiu al vietii conjugale - o schita in nuante intunecate de sepia. Egoisti, dar fermecatori, Anthony si Gloria ar putea sa se indrepte spre cariere de succes in literatura si cinematografie. Cuplul lor radiaza o stralucire aparte, insa, pentru ca nici unul din ei nu este inzestrat cu scanteia care ar face din aceasta stralucire o flacara creatoare, nimbul care ii inconjoara paleste, se intuneca si dispare. Poate ca acesta este rezultatul concluziei amare a lui Fitzgerald ca aura unor asemenea oameni este un dar otravit daca nu conduce la o capodopera, asa cum este romanul de fata"
     },
     {
       "id": 7,
@@ -239,7 +228,7 @@
       "price": "39.89 RON",
       "pages": 544,
       "stoc": "Stoc epuizat",
-      "coperta": "Brosata",
+      "coperta": "Cartonata",
       "details": "Cea mai cunoscuta si mai apreciata opera a lui Jane Austen va introduce in lumea de la cumpana veacurilor xvlll si xlx. Observatia fina si umorul autoarei ofera cititorului delicioase momente de lectura, surprinzind modul de viata britanic la un anumit nivel social. Nu lipseste nici povestea de dragoste cu peripetiile ei."
     },
     {
@@ -263,17 +252,6 @@
       "stoc": "Stoc epuizat",
       "coperta": "Brosata",
       "details": "Atata vreme cat va exista, din pricina legilor si a moravurilor, un blestem social, care creeaza in chip artificial, in plina civilizatie, adevarate iaduri, agravand cu o fatalitate omeneasca destinul, care e de esenta divina; atata vreme cat cele trei probleme ale secolului: injosirea omului prin exploatare, decaderea femeii prin foame, atrofierea copilului prin puterea intunericului nu vor fi rezolvate; atata vreme cat in anumite paturi constrangerile sociale vor fi cu putinta; cu alte cuvinte, si intr-un sens si mai larg, atata vreme cat pe pamant vor dainui ignoranta si mizeria – carti de felul celei de fata nu vor fi zadarnice"
-    },
-    {
-      "id": 25,
-      "picture": "images/negustorul_de_manuscrise.jpg",
-      "author": "John Grishham",
-      "title": "Negustorul de manuscrise",
-      "price": "26.73 RON",
-      "pages": 304,
-      "stoc": "In stoc",
-      "coperta": "Brosata",
-      "details": "O banda de hoti pune la cale un furt spectaculos dintr-o camera de valori aflata la subsolul Bibliotecii Firestone de la Universitatea Princeton. Prada este nepretuita, insa universitatea a asigurat-o pentru 25 de milioane de dolari. Bruce Cable este proprietarul unui magazin de carte, insa castiga bani buni ca negustor de carti rare si editii princeps, cochetand uneori cu piata neagra a cartilor si a manuscriselor furate. Mercer Mann este o tanara romanciera care sufera din pricina lipsei de inspiratie. Ea este abordata de o femeie eleganta si misterioasa care incearca sa o implice intr-o poveste periculoasa, dar captivanta. O suma considerabila de bani o convinge pe Mercer sa accepte o misiune sub acoperire, astfel ca se infiltreaza in cercul de prieteni al lui Bruce Cable."
     },
     {
       "id": 26,
@@ -305,7 +283,7 @@
       "price": "29.01 RON",
       "pages": 288,
       "stoc": "Stoc epuizat",
-      "coperta": "Brosata",
+      "coperta": "Cartonata",
       "details": "Omul Ilustrat reuneste optsprezece povesti in care fantasticul si science-fictionul se impletesc cu umorul negru, fatalismul si macabrul. In deschiderea cartii, naratorul relateaza prima lui intalnire cu Omul Ilustrat – un personaj fantastic, ale carui tatuaje prind viata atunci cand sunt privite, fiecare spunand o poveste diferita. Cititorul este indirect invitat sa priveasca imaginile si sa asiste la „punerea lor in scena“ – un pretext pentru Bradbury pentru a explora natura umanitatii si a relatiilor interumane in contextul abolirii barierelor temporale si spatiale. Autorul nu ezita sa se amuze de personajele sale, sa le arate defectele si limitele si sa le demaste naivitatea."
     },
     {
@@ -316,7 +294,7 @@
       "price": "40.99 RON",
       "pages": 736,
       "stoc": "In stoc",
-      "coperta": "Brosata",
+      "coperta": "Cartonata",
       "details": "De aceasta data, profesorul Robert Langdon este invitat la Muzeul Guggenheim din Bilbao pentru a lua parte la ceremonia de dezvaluire a unei inventii care 'va schimba fata stiintei pentru totdeauna'. Gazda este milionarul Edmond Kirsch, fostul student al profesorului, ale carui realizari high-tech l-au facut celebru in toata lumea."
     },
     {
@@ -349,7 +327,7 @@
       "price": "26.99 RON",
       "pages": 320,
       "stoc": "In stoc",
-      "coperta": "Brosata",
+      "coperta": "Cartonata",
       "details": "  „Structura romanului, in sine, reprezinta o incercare de dezvaluire si dezvoltare a caracterelor lui Elinor si Marianne, puse in fata unor dileme si enigme care trebuie rezolvate.” – JOSEPH WIESENFARTH "
     },
     {
@@ -371,7 +349,7 @@
       "price": "29.78RON",
       "pages": 580,
       "stoc": "Stoc epuizat",
-      "coperta": "Brosata",
+      "coperta": "Cartonata",
       "details": "Multipremiatul roman de debut al lui Viet Thanh Nguyen este descoperirea anului. Simpatizantul este - printre multe altele - un roman de spionaj si de razboi plin de suspansul unui thriller, o satira politica, o privire istorica lucida asupra colonizarii si revolutiei, un imn straniu si impecabil inchinat imigrantului, o explorare caustica si incomoda a identitatii si a Americii, o meditatie asupra vinovatiei si tradarii."
     },
     {
@@ -393,7 +371,7 @@
       "price": "19.69RON",
       "pages": 224,
       "stoc": "Stoc epuizat",
-      "coperta": "Brosata",
+      "coperta": "Cartonata",
       "details": "Una dintre cele mai importante creatii existentialiste ale lui Jean-Paul Sartre, Zidul (1939), este o colectie de cinci nuvele, reprezentative pentru scrierile sale ulterioare. Prima dintre ele, care da si titlul volumului, descrie, pe fondul experientelor crude si, totodata, absurde prin care a trecut Sartre ca voluntar in Razboiul Civil din Spania, ultimele clipe de viata ale unor prizonieri condamnati la moarte, inchisi in aceeasi celula. Absurditatea naturii umane in lumea moderna, lupta pentru supravietuire si pentru pastrarea libertatii si demnitatii individuale jaloneaza un parcurs initiatic in care aceste teme extrem de actuale sunt urmarite cu o totala obiectivitate si, nu rareori, cu un profund dezgust."
     },
     {
@@ -424,8 +402,8 @@
       "author": "Ken Follet",
       "title": "Iarna Lumii",
       "price": "59.99RON",
-      "pages": 911,   
-      "stoc": "In stoc",   
+      "pages": 911,
+      "stoc": "In stoc",
       "coperta": "Brosata",
       "details": "Razboiul i-a facut luptatori. Iubirea i-a facut eroi.  'Iarna lumii' continua in aceeasi maniera superlativa cu care ne-a obisnuit 'Caderea uriasilor'. O puternica drama, care inainteaza zgomotos si cu cea mai mare viteza. Este animata, captivanta si plina de detalii fascinante. Prin ochii personajelor principale, beneficiezi de un loc in fata la marele spectacol al celor mai memorabile evenimente ale istoriei. Al doilea roman al trilogiei continua din punctul in care ne-a lasat primul volum, urmarind destinele celor cinci familii - din America, Germania, Rusia, Marea Britanie si Tara Galilor - prin vremuri de intense transformari sociale, politice si economice, incepand cu ascensiunea celui de-al Treilea Reich si continuand cu Razboiul Civil Spaniol, drama celui de-al Doilea Razboi Mondial, experientele primelor bombe atomice apartinand Statelor Unite si Uniunii Sovietice si inceputul indelungatului Razboi Rece. In aceasta epopee fermecatoare, ciocnirea la nivel international a puterii militare cu convingerile personale va coplesi lumea, de la Cable Street din partea de est a Londrei pana la Pearl Harbor in Hawaii, din Spania la Stalingrad, din Dresda la Hiroshima."
     },
