@@ -6,7 +6,7 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #ddebe0;
+    background-color: #f7f7ee;  
 }
 
 /* ===============
@@ -19,7 +19,7 @@ body {
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
-    background-color: cadetblue;
+    background-color: #17706e;
     position: sticky;
     top: 0;
     padding: 0.8rem;
@@ -32,12 +32,12 @@ body {
     justify-content: space-between;
 }
 #admin, #cart {
-    color: #fdfdfd
+    color: #f7f7ee; 
 }
 .linkNav a{   
     font-size: 1.3rem;
-    margin-right: 1rem;    
-    transition-duration: 900ms;    
+    margin-right: 2rem;    
+    transition-duration: 900ms; 
 }
 
 .linkNav a:hover{
@@ -49,25 +49,15 @@ body {
     height: 2.5rem;
 }
 
-#navbar h1 {
-    color:#fe0000;   
-    transition-duration: 400ms;
-    margin-left: 0.6rem;
-    font-size: 1.5rem;
-}
-
-#navbar h1:hover {
-    color: rgb(232, 157, 17);    
-}
-
+ 
 a {
-    text-decoration: none;    
+    text-decoration: none;
 }
 
 .fas {
-    color: rgb(255, 255, 255);
     font-size: 1.3rem;
-    margin-right: 0.2rem;   
+    margin-right: 0.4rem;   
+    color: #f7f7ee; 
 }
 
 #navbar  button .fas:hover{
@@ -79,23 +69,36 @@ a {
     Card style
 =================== */
 .card {
-    border: 2px solid black;
     border-radius: 0.5rem;
-    border-left: 6px solid black;
-    border-top: 3px solid black;
-    width: 12.05rem;
+    background-color: #b6eb7a;
+    width: 12.8rem;
     height: 21.2rem;
     text-align: center;    
     margin: auto;    
     margin-top: 1rem;
     margin-bottom: 0.5rem;
-    background-color: #ebda7a;   
+    transition-duration: 350ms; 
+}
+.card:hover {
+    box-shadow: 2px 2px 12px 5px #17706e;
 }
 
 .card h4, h5, p, button {
     margin-bottom: 0.3rem;
 }
-
+.card:hover .det{
+    background-color: #fb7813;
+    color: rgb(255, 255, 255);
+    padding: 0.1rem 1rem;    
+    cursor: pointer;
+    border-radius: 6px;
+    transition-duration: 400ms;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem; 
+    font-weight: bold;
+    visibility: visible;
+    border: none;
+}
 .card img{
     height: 70%;
     width: 100%;
@@ -104,7 +107,7 @@ a {
     border-top-left-radius: 0.4rem;
     border-top-right-radius: 0.4rem;
 }
-.card img:hover{
+.card:hover img{
     padding: 0rem;
 }
 
@@ -118,7 +121,7 @@ a {
 =================== */
 
 #products {
-    width: 860px;    
+    width: 1000px;    
     margin: auto;
     padding: 10px;    
     border-radius: 8px;
@@ -131,21 +134,13 @@ a {
 }
 
 .det {
-    background-color: rgb(221, 221, 221);
-    padding: 0.1rem 2rem;    
-    cursor: pointer;
-    border-radius: 6px;
-    transition-duration: 400ms;
-    font-size: 1.2rem;
-    letter-spacing: 0.2rem;    
-    color: #093131;
-    margin-bottom: 1rem;
+    visibility: hidden;
 }
 
 .det:hover {
-    background-color: rgb(233, 157, 17);
-    color: black;
-   
+    background-color: cadetblue;
+    color: rgb(255, 255, 255);
+    
 }
 
 /* ================
@@ -161,7 +156,7 @@ a {
 =================== */
 #main-footer {
     text-align: center;
-    background-color: cadetblue;
+    background-color: #17706e;
     color: rgb(255, 251, 251);
     padding: 2rem;     
     margin-top: 0.4rem;
@@ -186,13 +181,17 @@ a {
     width: 30rem;
     margin: auto;
     margin-top: 0.4rem; 
-     
+    
 }
 
 .adminInput {
     height: 2rem;
     margin-top: 0.6rem;
     border-radius: 0.2rem;  
+    border: none;
+    background-color: #b6eb7a;
+    color: black;
+    padding: 0.6rem;
 }
 
 #description{
@@ -204,40 +203,43 @@ a {
 #submit {
     height: 2.2rem;
     cursor: pointer;  
-    background-color: rgb(81, 82, 82);
-    color: beige;
+    background-color: #17706e;
+    color: #f7f7ee;
     font-size: 1rem;
     letter-spacing: 0.6rem;
     transition-duration: 300ms;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
 }
 #submit:hover{
-    height: 2.4rem;
-    color: rgb(81, 82, 82);
-    background-color:rgb(144, 228, 228);
+    background-color:#fb7813;
+    color: #f7f7ee;
 }
 .adminTable {    
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    width: 64rem;
+    width: 74rem;
     margin: auto;
-    margin-top: 0.4rem;  
-    border: 1px solid black;
-    border-left: 2rem solid gray;
-    border-right: 2rem solid gray;
-    background-color: beige;
+    margin-top: 0.4rem;
+    border-left: 2rem solid #b6eb7a;
+    border-right: 2rem solid #b6eb7a;
+    background-color: #ddebe0;
+    border-bottom: 2px solid #b6eb7a;
+    border-top: 2px solid #b6eb7a;
+    border-radius: 8px;
 }
 
 .adminTable h3{
     margin-left: 2rem;
- 
 }
 
 .adminTable h4{
     margin:auto;
-    text-decoration: underline;
-    color: rgb(158, 1, 1);
+    
+    color: #fb7813;
     letter-spacing: 0.2rem;
 }
 
@@ -252,13 +254,14 @@ a {
     margin-right: 1rem;
     border-radius: 4px;
     cursor: pointer;
-    transition-duration: 250ms;
+    transition-duration: 350ms;
+    font-weight: bold;
+    border: none;
 }
 .adminTable button:hover{
-    padding: 0.5rem 1.7rem;
-    background-color: rgb(110, 4, 4);
-    color: aquamarine;
-    font-size: 0.9rem;
+    color: #f7f7ee;
+    background-color: #fb7813;
+    box-shadow: 1px 1px 10px 4px #17706e;
 }
 
 .imgAdmin, .img{
@@ -271,14 +274,14 @@ a {
 ==========================*/
 
 #detailsContainer #output{     
-    width: 70rem;   
-    background-color: #ebda7a;   
+    width: 80rem;   
+    background-color: #b6eb7a;   
     text-align: center;
     margin: auto;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    height: 80vh;
-    color: rgb(3, 27, 27);
+    height: 90vh;
+    color: rgb(0, 0, 0);
 }
 /* ==============
     Divs style          
@@ -292,21 +295,21 @@ a {
     flex-direction: row;
 }
 .bookDescription{
-    width: 36rem;
+    width: 30rem;
     margin: 4rem;
 }
 
-/* =====
-        Img style
-======= */
+/* ===== ===== ===== ===== =====
+            Img style
+=======  ===== ===== ===== =====*/
 
 .bookPic{   
     margin: auto;
     border-radius: 0.5rem;
-    width: 15rem;
-    height: 23.28rem;
+    width: 17rem;
+    height: 25.28rem;
     text-align: center;   
-    background-color: #ebda7a;
+    background-color: #b6eb7a; 
     margin-right: 2rem;
 
 }
@@ -315,15 +318,17 @@ a {
     width: 110%;
     padding: 1.2rem;
     transition-duration: 250ms;
+    box-shadow: 1px 1px 10px 2px #888888;
 }
 .bookPic img:hover {
     padding: 0%;
+    box-shadow: 1px 1px 6px 4px #fb7813;
 }
 
 .bookPic div {
     position: absolute;
     top: 10rem;
-    background-color: #3e6308;
+    background-color: #fb7813;
     padding: 0.3rem 0.8rem;
     color: bisque;
 }
@@ -332,16 +337,25 @@ a {
 
 .bookDetails h5 {
     margin-bottom: 2rem;    
-    padding: 0.1rem;
+    border-radius: 6px;
+    padding:  0.6rem 1rem;
     text-align: left;
+    background-color: #17706e;
+    color: #f7f7ee;
+    border-left: 2rem solid #f7f7ee;
+    border-right: 2rem solid #f7f7ee;
+    box-shadow: 1px 1px 8px 6px #888888;
+    transition-duration: 250ms;
+}
+.bookDetails h5:hover {
+    box-shadow: 1px 1px 10px 4px #fb7813;
 }
 .bookDetails span {
-    text-decoration: underline;
     font-size: 0.95rem;
 }
 .btn {
     padding: 0.4rem 2.2rem;
-    background-color: cadetblue;
+    background-color: #17706e;
     cursor: pointer;
     margin-top: 1rem;
     color: #ddebe0;
@@ -349,20 +363,45 @@ a {
     border-radius: 6px;
     transition-duration: 400ms;
     letter-spacing: 0.2rem;
+    font-weight: bold;
+    border: none;
 }
 .btn:hover{
-    background-color: #3e6308;
+    background-color: #fb7813
 }
+
+
 .bookDescription i {
     margin-left: 0.6rem;
     font-size: 1.1rem;
 }
+.bookDescription h4 {
+    margin-top: 3rem;
+    color: #17706e;
+}
 .bookDescription p {
     font-size: 0.9rem;
+    background-color: #ddebe0;
+    padding: 0.6rem;
+    border-radius: 6px;
+    box-shadow: 1px 1px 6px 2px #888888;
+    transition-duration: 300ms;
+}
+.bookDescription p:hover {
+    box-shadow: 1px 1px 10px 4px #fb7813;
 }
 .bookDescription h5 {
     font-size: 1rem;
-    text-decoration: underline;
+    background-color: #17706e;
+    width: 10rem;
+    padding: 0.6rem 2rem;
+    border-radius: 6px;
+    color: #f7f7ee;
+    box-shadow: 1px 1px 10px 6px #888888;
+    transition-duration: 300ms;
+}
+.bookDescription h5:hover {
+    box-shadow: 1px 1px 10px 4px #fb7813;
 }
 /* ===========================
     Resposive style
@@ -371,55 +410,58 @@ a {
 @media(min-width: 1500px) {
     
     #products {
-    width: 1100px;
-    margin: auto;
-    padding: 10px;
-    margin-top: 6px;
-    border-radius: 8px;
+        width: 1350px;
+        margin: auto;
+        padding: 10px;
+        margin-top: 6px;
+        border-radius: 8px;
     }
     #navbar {
-        background-color: cadetblue;
+        background-color: #17706e;
     }
     .linkNav a{
-    color: rgb(100, 223, 223);
-    font-size: 1.4rem;
-    margin-right: 1rem;    
-    transition-duration: 850ms;    
+        font-size: 1.4rem;
+        margin-right: 1rem;    
+        transition-duration: 850ms;    
     }
     
     .linkNav a:hover{
-    text-decoration: underline;    
+        text-decoration: underline;    
     }
 
     #detailsContainer #output{     
-        width: 76rem;   
-        background-color: rgb(224, 220, 215);
+        width: 100rem;   
+        background-color: #afb9a3;   
         padding: 1rem;
         text-align: center;
         margin: auto;
         margin-top: 1rem;
         margin-bottom: 1.6rem;
+        height: 80vh;
     }
-
+    .bookPic div {
+        position: absolute;
+        top: 19rem;
+        background-color: #5f753e;
+        padding: 0.3rem 0.8rem;
+        color: bisque;
+    }
     .bookPic{   
-        border-radius: 0.5rem;
-        width: 25rem;
-        height: 32.28rem;
+        border-radius: 0rem;
+        width: 20rem;
+        height: 28.28rem;
         text-align: center;   
         margin-bottom: 0.5rem;
-        background-color: rgb(224, 220, 215);
+        background-color: #afb9a3;   
     }
     .card {
-        border: 2px solid black;
         border-radius: 0.5rem;
-        border-left: 6px solid black;
-        border-top: 3px solid black;
         width: 12.05rem;
         height: 21.2rem;
         text-align: center;    
         margin: auto;    
         margin-top: 1rem;
         margin-bottom: 0.5rem;
-        background-color: #e4dbaa;   
+        background-color: #b6eb7a;
     }
 }

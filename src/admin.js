@@ -21,8 +21,7 @@ function addNewProduct() {
 	const pages = document.getElementById('pages').value;
 	const descriptionValue = document.getElementById('description').value;
 
-	let product = {
-		
+	let product = {	
 		picture: picture,
 		author: author,
 		price: price,

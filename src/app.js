@@ -9,3 +9,4 @@ function getProducts() {
 		.get('http://localhost:3000/products')
 		.then((data) => ui.showProducts(data));
 }
+

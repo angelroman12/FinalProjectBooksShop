@@ -4,15 +4,11 @@ import { ui } from './ui.js';
 window.onload = () => {
 	if(window.location.search !== '') {
 		const id = window.location.search.split('=')[1];	
-		http.get(`http://localhost:3000/products/?id=` +id )
+		http.get(`http://localhost:3000/products/?id=`+id )
 		.then((data) =>  ui.showProductDetails(data));		
-		
 	}
-	let button =  document.getElementsByClassName('addToCart')
-	if (button){
-	   button.addEventListener('click', function() {
-		   console.log('work')
-	   })
-	}
+
+
+
 }
 

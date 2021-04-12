@@ -7,7 +7,7 @@
         
     body {
         font-family: Arial, Helvetica, sans-serif;
-        background-color: rgb(212, 207, 198);
+        background-color: #f7f7ee;  
         /* width: 100%; */
     }
 
@@ -15,7 +15,7 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
-        background-color: rgb(131, 131, 156);
+        background-color: 17706e;
         padding: 2px;
         position: sticky;
         top: 0;
@@ -32,8 +32,7 @@
     justify-content: space-between;
     }
 
-    .linkNav a{
-        color: rgb(100, 223, 223);
+    .linkNav a{       
         font-size: 1.3rem;          
         transition-duration: 250ms;
         letter-spacing: 0.2rem;
@@ -54,23 +53,32 @@
 
     #products {
         width: 100%;
-        background-color: rgb(37, 37, 37);
         margin: auto;
         padding: 2px;
-    
     }
     .card {
-        border: 1px solid rgb(194, 72, 72);
+        border: none;
         border-radius: 4px;
         width: 15rem;
         height: 26rem;
         text-align: center;
         padding: 2px;
-        /* margin: auto; */
         margin-bottom: 2px;
-        background-color: cornsilk;
+        background-color: #b6eb7a;
     }
-    
+    .det{
+        background-color: #fb7813;
+        color: rgb(255, 255, 255);
+        padding: 0.1rem 1rem;    
+        cursor: pointer;
+        border-radius: 6px;
+        transition-duration: 400ms;
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem; 
+        font-weight: bold;
+        visibility: visible;
+        border: none;
+    }
     .card img{
         height: 80%;
         width: 100%;
@@ -82,7 +90,7 @@
     
     #main-footer {
         text-align: center;
-        background-color: rgb(6, 6, 48);
+        background-color: #17706e;
         color: rgb(255, 251, 251);
         padding: 20px;
         margin-top: 3px;
@@ -164,5 +172,34 @@
         height:5rem;
         width: 3rem;
         margin-top: 1rem;        
+    }
+    
+    .details {
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;   
+        margin: auto;
+        flex-direction: column;
+        width: 500px;
+    }   
+
+    #detailsContainer #output{     
+        width: 500px ;
+        background-color: #b6eb7a;   
+        text-align: center;
+        margin: auto;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        height: auto;
+        color: rgb(0, 0, 0);
+    }
+
+    .bookPic{   
+        margin: auto;
+        border-radius: 0.5rem;
+        width: 17rem;
+        height: 25.28rem;
+        text-align: center;   
+        background-color: #b6eb7a;
     }
 }
