@@ -7,8 +7,5 @@ window.onload = () => {
 		http.get(`http://localhost:3000/products/?id=`+id )
 		.then((data) =>  ui.showProductDetails(data));		
 	}
-
-
-
 }
 

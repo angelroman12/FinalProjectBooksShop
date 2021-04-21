@@ -32,7 +32,8 @@ function addNewProduct() {
 
 	http
 		.post('http://localhost:3000/products', product)
-		.then((data) => getProducts());		
+		.then((data) => getProducts());	
+		alert("Produsul a fost adaugat")		
 }
 
 // Delete product
@@ -45,5 +46,7 @@ function deleteProduct(e) {
 			.delete(`http://localhost:3000/products/${id}`)
 			.then((data) => getProducts())
 			.catch('Error on delete!');
-	}	
+			alert("Produsul a fost sters")		
+	}
+	
 }

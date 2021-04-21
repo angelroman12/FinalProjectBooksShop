@@ -19,13 +19,32 @@
         <a id="admin" href="admin.html"> <i class="fas fa-lock"></i> Admin </a>
     </div>      
 </div>
+
 <!-- Container -->
      <div id="cartContainer">
-         
+        <table id="table-body">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="cart-body"></tbody>     
+                  
+        </table>
+        <span id="total" value=""><strong>Total: </strong></span> 
     </div>
 <!-- Footer -->
+
      <footer id="main-footer">
          <p>Front End Developer Angel Roman // Book Shop  &copy; 2021 All Rights Reserved</p>
      </footer>
+    
+     <script src="src/cart.js" type="module" ></script>
+     <script src="src/localStorage.js" type="module"></script>
 </body>
 </html>
