@@ -33,7 +33,7 @@
         align-items: center;
         justify-content: space-around;
         background-color: 17706e;
-        padding: 2px;
+        padding: px;
         position: sticky;
         top: 0;
         width: 500px;
@@ -50,10 +50,11 @@
     }
 
     .linkNav a{       
-        font-size: 1.3rem;          
+        font-size: 1rem;          
         transition-duration: 250ms;
         letter-spacing: 0.2rem;
         margin: auto;
+        background-image: none;
     }
    
     #logo {

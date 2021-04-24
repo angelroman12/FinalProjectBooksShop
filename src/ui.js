@@ -25,7 +25,7 @@ class UI {
             <h4> ${product.author}</h4>
             <h5>${product.title}</h5>
             <p>${product.price} ${product.curency} </p> 
-        	<a href="details.html?id=${product.id}"> <button class="det add-cart"> Details</button> </a>					
+        	<a href="details.html?id=${product.id}"> <button class="det add-cart"> Detalii</button> </a>					
             </div>            
             `;
 			this.productsDiv.innerHTML += output;
@@ -47,6 +47,7 @@ class UI {
 			this.productsDiv.innerHTML += output;
 		});
 	}
+	// Get products on details page	
 	showProductDetails(products){	
 		
 		let output = '';
@@ -60,7 +61,7 @@ class UI {
 					<div class="bookDescription">
 						<h5>Descriere:</h5><p>  ${product.details} </p>					
 						<h4> <span>Pret:</span> ${product.price} RON</h4>		
-						<button class="btn addToCart"  id="addProductToCart" ${product.id} > Add To Cart  <i class="fas fa-shopping-cart"></i></button>		
+						<button class="btn addToCart"  id="addProductToCart" ${product.id} >Adauga in cos  <i class="fas fa-shopping-cart"></i></button>		
 						<input type="Number" value="1" id="quantity">	
 					</div>
 					<div class="bookDetails">					
@@ -87,6 +88,7 @@ class UI {
 		});
 	 
 	}
+	// Get products on cart page	
 	showProductsAdmin(products) {
 		let output = '';
 		products.forEach((product) => {
@@ -104,17 +106,17 @@ class UI {
     }
     showProductsCart(storageItems) {
         let output = '';
-        storageItems.forEach((item) => {
+        storageItems.forEach((book) => {
             output = `
             <table id="table-cart">
                 <tbody> 
                     <tr class="cartRows">
-                        <td><img src="${item.product.picture}" class="admin-card-img"/></td>
-                        <td><button onclick="window.location.href='details.html?id=${item.product.id}'" class="title">${item.product.title}</button></td>                       
-                        <td>${item.product.price} RON</td>
-                        <td><input value=${item.count} id="quantity" type="number" min="1" max="10"/></td>
-                        <td id="subtotal">${item.product.price*item.count} RON </td>
-                        <td><button id=${item.product.id} type="button" class="card-button delete"> <i class="far fa-trash-alt" id=${item.product.id}></i></button></td>
+                        <td><img src="${book.product.picture}" class="admin-card-img"/></td>
+                        <td><button onclick="window.location.href='details.html?id=${book.product.id}'" class="title">${book.product.title}</button></td>                       
+                        <td>${book.product.price} RON</td>
+                        <td><input value=${book.count} id="quantity" type="number" min="1" max="10"/></td>
+                        <td id="subtotal">${book.product.price*book.count} RON </td>
+                        <td><button id=${book.product.id} type="button" class="card-button delete"> <i class="far fa-trash-alt" id=${book.product.id}></i></button></td>
                     </tr>
                 </tbody>   
             </table> 
