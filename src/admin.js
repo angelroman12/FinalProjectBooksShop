@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', getProducts);
 
 function getProducts() {
 	http
-		.get('https://60827d705dbd2c0017579a8a.mockapi.io/api/v1/products')
+		.get('https://6086e5aea3b9c200173b7295.mockapi.io/products')
 		.then((data) => ui.showProductsAdmin(data));
 }
 
@@ -31,7 +31,7 @@ function addNewProduct() {
 	};
 
 	http
-		.post('https://60827d705dbd2c0017579a8a.mockapi.io/api/v1/products', product)
+		.post('https://6086e5aea3b9c200173b7295.mockapi.io/products', product)
 		.then((data) => getProducts());	
 		alert("Produsul a fost adaugat")		
 }
@@ -43,7 +43,7 @@ function deleteProduct(e) {
 	if (e.target.classList.contains('delete')) {
 		const id = e.target.id;
 		http
-			// .delete(`https://60827d705dbd2c0017579a8a.mockapi.io/api/v1/products/${id}`)
+			.delete(`https://6086e5aea3b9c200173b7295.mockapi.io/products/${id}`)
 			.then((data) => getProducts())
 			.catch('Error on delete!');
 			alert("Produsul a fost sters")		

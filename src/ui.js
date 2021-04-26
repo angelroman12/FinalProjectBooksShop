@@ -52,7 +52,7 @@ class UI {
 		
 		let output = '';
 		products.forEach((product) => {
-			output += 
+			output = 
 			`<div class="details">		
 					<div class="bookPic">
 						<img src=${product.picture}>
