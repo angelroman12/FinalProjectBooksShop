@@ -7,8 +7,7 @@
         
     body {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        background-color: #f7f7ee;  
-        /* width: 100%; */
+        
     }
     #authors {
         display: none;
@@ -50,17 +49,24 @@
     }
 
     .linkNav a{       
-        font-size: 1rem;          
+        font-size: 1.1rem;          
         transition-duration: 250ms;
         letter-spacing: 0.2rem;
         margin: auto;
         background-image: none;
     }
-   
+    #navbar .fas {
+        font-size: 1rem;
+        margin-right: 0.4rem;   
+        color: #f7f7ee;
+    }
     #logo {
         width: 13rem;
         height: 3rem;
         margin: auto;
+        background: none;
+        padding: 0.2rem 1.2rem;
+        border-radius: 5px;
     }
     #output {
         display: flex;
@@ -70,9 +76,9 @@
     }
 
     #products {
-        width: 100%;
-        margin: auto;
-        padding: 2px;
+        width: 500px;
+        
+        background-color: #888888;
     }
     .card {
         border: none;
@@ -87,19 +93,7 @@
         border-right: 0.5rem solid#b6eb7a;
         border-bottom: 0.3rem solid#b6eb7a;
     }
-    .det{
-        background-color: #fb7813;
-        color: rgb(255, 255, 255);
-        padding: 0.1rem 1rem;    
-        cursor: pointer;
-        border-radius: 6px;
-        transition-duration: 400ms;
-        font-size: 1.2rem;
-        letter-spacing: 0.2rem; 
-        font-weight: bold;
-        visibility: visible;
-        border: none;
-    }
+    
     .card img{
         height: 80%;
         width: 100%;
@@ -125,27 +119,28 @@
 
     #adminContainer #output{
         width: 500px;
-        margin: auto;
+       
     }
     #adminContainer h2 {
         display: none;
-       
     }
     
     #bookInput{
         display: flex;
         flex-direction: column ;
-        width: 20rem;
-        margin: auto;
+        justify-content: center;
+        align-items: center;
         margin-top: 0.4rem; 
+       width: 500px;;
+        margin-bottom: 1rem;
         
-         
     }
     
     .adminInput {
         height: 2rem;
         margin-top: 0.6rem;
         border-radius: 0.2rem;  
+        width: 20rem;
     }
     
     #description{
@@ -157,7 +152,7 @@
     #submit {
         height: 1.8rem;
         cursor: pointer;  
-    
+        width: 20rem;
     }
     
     .adminTable {    
@@ -165,11 +160,13 @@
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
-        width: 10rem;        
-        margin-top: 0.4rem;  
+        width: 14rem;        
+        margin-top: 0.6rem;  
+        margin-bottom: 0.8rem;  
         border: 1px solid black;
-        height: 16rem;
+        height: 17rem;
         text-align: center;
+        
     }
     
     .adminTable h3, h4, h5{
@@ -190,8 +187,8 @@
     }
     
     .imgAdmin, .img{
-        height:5rem;
-        width: 3rem;
+        height:8rem;
+        width: 6rem;
         margin-top: 1rem;        
     }
     
@@ -222,5 +219,12 @@
         height: 25.28rem;
         text-align: center;   
         background-color: #b6eb7a;
+        margin-top: 1rem;
+    }
+
+    #cartContainer {
+        text-align: right;
+        background-color: #f7f7ee; 
+        min-height: 100vh;
     }
 }
