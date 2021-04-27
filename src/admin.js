@@ -43,7 +43,7 @@ function deleteProduct(e) {
 	if (e.target.classList.contains('delete')) {
 		const id = e.target.id;
 		http
-			// .delete(`https://6086e5aea3b9c200173b7295.mockapi.io/products/${id}`)
+			.delete(`https://6086e5aea3b9c200173b7295.mockapi.io/products/${id}`)
 			.then((data) => getProducts())
 			.catch('Error on delete!');
 			alert("Produsul a fost sters")		
