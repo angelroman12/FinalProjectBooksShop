@@ -24,7 +24,7 @@ body {
     position: sticky;
     top: 0;
     padding: 0.8rem;
-   
+    
 }
 
 .name-logo {
@@ -84,6 +84,7 @@ a {
     margin-bottom: 2rem;
     margin-top: 2rem;
     background-image: linear-gradient(160deg, #6eda95 0%, #bedceb 100%);
+    
 }
 .box {
     /* display: flex;
@@ -135,6 +136,14 @@ a {
 .box img {
     width: 10rem;
 }   
+/* ====================
+Animatie SVG 
+=============*/
+
+.animatie {
+    text-align: center;
+    
+}
 
 /* ================
     Card style
