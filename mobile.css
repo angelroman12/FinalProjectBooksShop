@@ -41,7 +41,12 @@
     .card h4, h5, p, button {
         margin-bottom: 0rem;
     }
-    
+    .animatie {
+        text-align: center;
+        background-color: #f7f7ee;
+        width: 500px;
+        margin-top: 1rem;
+    }
     .name-logo {
     display: flex;
     align-items: center;
@@ -165,8 +170,7 @@
         margin-bottom: 0.8rem;  
         border: 1px solid black;
         height: 17rem;
-        text-align: center;
-        
+        text-align: center;        
     }
     
     .adminTable h3, h4, h5{

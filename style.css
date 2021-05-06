@@ -142,7 +142,9 @@ Animatie SVG
 
 .animatie {
     text-align: center;
-    
+    background-color: #f7f7ee;
+    width: 1500px;
+    margin-top: 1rem;
 }
 
 /* ================
@@ -611,5 +613,10 @@ Animatie SVG
         margin-top: 1rem;
         margin-bottom: 0.5rem;
         background-color: #a1b190;
+    }
+    .animatie {
+        text-align: center;
+        background-color: #f7f7ee;
+        width: 2200px;
     }
 }
