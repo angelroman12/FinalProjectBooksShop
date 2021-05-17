@@ -228,8 +228,8 @@
 
     #cartContainer {
         text-align: right;
-        background-color: #f7f7ee; 
-        min-height: 100vh;
+        background-color: #d8e7f9;
+        min-height: 90vh;
         width: 500px;
     }
     #table-body {
