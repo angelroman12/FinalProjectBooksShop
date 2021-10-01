@@ -35,7 +35,7 @@ body {
 }
 
 .linkNav a{   
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin-right: 2rem;    
     transition-duration: 900ms; 
     color: #f7f7ee;
@@ -206,6 +206,26 @@ Animatie SVG
 /* ================
     Products style
 =================== */
+.filters {
+    width: 50rem;
+    display: flex;
+    margin: auto;
+    margin-bottom: 0.6rem;
+}
+.filtrareBtn {
+    background-color: #79B4B7;
+    padding: 0.4rem 0.6rem;
+    border: none;
+    margin: 0.2rem;
+    cursor: pointer;
+    border-radius: 6px;
+    color: #F8F0DF;
+    font-weight: bold;
+}
+.filtrareBtn:hover {
+    background-color: #5f5f5f;
+    color: #79B4B7;
+}
 
 #products {
     width: 1000px;    
