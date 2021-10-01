@@ -207,10 +207,12 @@ Animatie SVG
     Products style
 =================== */
 .filters {
-    width: 50rem;
+    width: 100%;
     display: flex;
     margin: auto;
     margin-bottom: 0.6rem;
+    align-items: center;
+    justify-content: center;
 }
 .filtrareBtn {
     background-color: #79B4B7;

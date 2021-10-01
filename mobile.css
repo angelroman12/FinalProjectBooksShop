@@ -43,9 +43,22 @@
     }
     .animatie {
         text-align: center;
-        background-color: #d8e7f9;
+        background-color: #F8F0DF;
         width: 500px;
         margin-top: 1rem;
+    }
+    .filters {
+        width: 100%;
+        display: flex;
+        margin: auto;
+        margin-bottom: 0.6rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 4rem;
+    }
+    .filtrareBtn {
+        width: 10rem;
     }
     .name-logo {
     display: flex;
