@@ -8,7 +8,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
    
     /* background-image: linear-gradient(to top, #e2d1ad 0%, #d1fdff 100%); */
-    background-color: #d8e7f9;
+    background-color: #F8F0DF;
 }
 
 /* ===============
@@ -19,12 +19,12 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
-    background-color: #17706e;
+    background-color: #79B4B7;
     position: sticky;
     top: 0;
-    padding: 0.8rem;
+    padding: 0.2rem;
     
 }
 
@@ -42,7 +42,7 @@ body {
     padding: 0.3rem 1.2rem;
     border-radius: 5px;
     /* background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%); */
-    transition-duration: 850ms;
+    transition-duration: 350ms;
 }
 
 
@@ -54,8 +54,8 @@ body {
     border-radius: 5px;
 }
 .linkNav a:hover {
-    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 60%);
-    /* color: #16a085; */
+    background-color: #FEFBF3;
+    color: #17706e;
 }
  
 a {
@@ -64,7 +64,7 @@ a {
 
 #navbar .fas {
     font-size: 1.3rem;
-    color: #f7f7ee;
+    color: #79B4B7;
 }
 
 #navbar  button .fas:hover{
@@ -142,7 +142,7 @@ Animatie SVG
 
 .animatie {
     text-align: center;
-    background-color: #d8e7f9;
+    background-color: #F8F0DF;
     margin-top: 1rem;
     width: 100%;
     margin-bottom: 0.2rem;
@@ -213,7 +213,7 @@ Animatie SVG
     padding: 10px;    
     border-radius: 8px;
     box-shadow: 2px 2px 10px 2px #5f5f5f;
-    background-color: #f7f7ee;
+    background-color: #F8F0DF;
     margin-bottom: 2rem;
 }
 
@@ -237,16 +237,15 @@ Animatie SVG
 =================== */
 #main-footer {
     text-align: center;
-    background-color: #17706e;
+    background-color: #79B4B7;
     color: rgb(255, 251, 251);
-    padding: 2rem;     
-    margin-top: 0.4rem;
+    padding: 0.6rem;     
 }
 /* ==================
         Admin Page
 ===================== */
 #adminContainer #output{
-    width: 60rem;
+    width: 70rem;
     margin: auto;
 }
 #adminContainer h2 {
@@ -258,8 +257,7 @@ Animatie SVG
     flex-direction: column ;
     width: 30rem;
     margin: auto;
-    margin-top: 0.4rem; 
-    
+    margin-top: 0.4rem;    
 }
 
 .adminInput {
@@ -267,7 +265,7 @@ Animatie SVG
     margin-top: 0.6rem;
     border-radius: 0.2rem;  
     border: none;
-    background-color: #b6eb7a;
+    background-color: #FEFBF3;
     color: black;
     padding: 0.6rem;
 }
@@ -281,10 +279,10 @@ Animatie SVG
 #submit {
     height: 2.2rem;
     cursor: pointer;  
-    background-color: #17706e;
+    background-color: #79B4B7;
     color: #f7f7ee;
     font-size: 1rem;
-    letter-spacing: 0.6rem;
+    /* letter-spacing: 0.6rem; */
     transition-duration: 300ms;
     font-weight: bold;
     border-radius: 8px;
@@ -302,11 +300,11 @@ Animatie SVG
     width: 74rem;
     margin: auto;
     margin-top: 0.4rem;
-    border-left: 2rem solid #b6eb7a;
-    border-right: 2rem solid #b6eb7a;
-    background-color: #ddebe0;
-    border-bottom: 2px solid #b6eb7a;
-    border-top: 2px solid #b6eb7a;
+    border-left: 1rem solid #9D9D9D;
+    border-right: 1rem solid #9D9D9D;
+    background-color: #FEFBF3;
+    border-bottom: 1px solid #9D9D9D;
+    border-top: 1px solid #9D9D9D;
     border-radius: 8px;
 }
 
@@ -316,7 +314,7 @@ Animatie SVG
 
 .adminTable h4{
     margin:auto;
-    color: #fb7813;
+    color: #000000;
     letter-spacing: 0.2rem;
 }
 
@@ -350,12 +348,16 @@ Animatie SVG
         Details style 
 ==========================*/
 
-#detailsContainer #output{     
-    width: 80rem;   
-    background-color: #e9e9e9;
+#detailsContainer{     
+    width: 100%;   
+    height: 100%;
+    background-color: #FEFBF3;
     margin: auto;
     color: rgb(0, 0, 0);
     height: 100vh;
+}
+#detailsContainer {
+    background-color: #f5e2ae;
 }
 /* ==============
     Divs style          
@@ -370,8 +372,7 @@ Animatie SVG
 }
 .bookDescription{
     width: 30rem;
-    margin: 4rem;
-    
+    margin: 4rem;    
 }
 
 /* ===== ===== ===== ===== =====
@@ -389,21 +390,22 @@ Animatie SVG
 .bookPic img{
     height: 110%;
     width: 110%;
-    padding: 1.2rem;
+    padding: 0.6rem;
     transition-duration: 250ms;
     box-shadow: 1px 1px 10px 2px #888888;
+    background-color: #F8F0DF;
 }
 .bookPic img:hover {
     padding: 0%;
-    box-shadow: 1px 1px 10px 2px #fb7813;
+    box-shadow: 1px 1px 6px 2px #79B4B7;
 }
 
 .bookPic div {
     position: absolute;
-    top: 13rem;
-    background-color: #fb7813;
+    top: 8rem;
+    background-color: #F8F0DF;
     padding: 0.3rem 0.8rem;
-    color: #f7f7ee;
+    color: #000000;
 }
 
 /* ============ */
@@ -413,24 +415,23 @@ Animatie SVG
     border-radius: 6px;
     padding:  0.6rem 1rem;
     text-align: left;
-    background-color: #17706e;
-    color: #f7f7ee;
-    border-left: 2rem solid #ddebe0;
-    border-right: 2rem solid #ddebe0;
-    box-shadow: 1px 1px 3px 2px rgb(66, 66, 66);
+    background-color: #9D9D9D;
+    color: #000000;
+    border-left: 2rem solid #F8F0DF;
+    border-right: 2rem solid #F8F0DF;
+    /* box-shadow: 1px 1px 6px 2px rgb(66, 66, 66); */
     transition-duration: 250ms;
 }
 .bookDetails h5:hover {
-    box-shadow: 1px 1px 10px 5px #fb7813;
+    box-shadow: 1px 1px 6px 2px #79B4B7;
 }
 .bookDetails span {
-    font-size: 0.95rem;
-    
-    color: rgb(248, 240, 229);
+    font-size: 0.95rem;    
+    color: rgb(0, 0, 0);
 }
 .btn {
-    padding: 0.4rem 2.2rem;
-    background-color: #17706e;
+    padding: 0.3rem 0.3rem;
+    background-color: #79B4B7;
     cursor: pointer;
     margin-top: 1rem;
     color: #f7f7ee;
@@ -442,9 +443,8 @@ Animatie SVG
     border: none;
 }
 .btn:hover{
-    background-color: #fb7813
+    background-color: #9D9D9D
 }
-
 
 .bookDescription i {
     margin-left: 0.6rem;
@@ -452,9 +452,9 @@ Animatie SVG
 }
 .bookDescription h4 {
     margin-top: 3rem;
-    color: #e9e9e9;
-    background-color: #17706e;
-    width: 12rem;
+    color: #000000;
+    background-color: #9D9D9D;
+    width: 9.4rem;
     padding: 0.6rem 1rem;
     border-radius: 6px;
     text-align: center;
@@ -468,31 +468,32 @@ Animatie SVG
     transition-duration: 300ms;
 }
 .bookDescription p:hover {
-    box-shadow: 1px 1px 10px 4px #fb7813;
+    box-shadow: 1px 1px 6px 2px #79B4B7;
 }
 .bookDescription h5 {
     font-size: 1rem;
-    background-color: #17706e;
+    background-color: #9D9D9D;
     width: 10rem;
     padding: 0.6rem 2rem;
     border-radius: 6px;
-    color: #f7f7ee;
+    color: #000000;
     box-shadow: 1px 1px 6px 3px #888888;
     transition-duration: 300ms;
+    margin-bottom: 2rem;
 }
 .bookDescription h5:hover {
-    box-shadow: 1px 1px 10px 4px #fb7813;
+    box-shadow: 1px 1px 6px 2px #79B4B7;
 }
 
 #quantity {
-    width: 3rem;
-    height: 2rem;
+    width: 2.2rem;
+    height: 1.7rem;
     border: none;
     text-align: center;
     background-color: #f7f7ee;
-    box-shadow: 1px 1px 4px 1px #b6eb7a;
-    color: #17706e;
-    font-size: 1.1rem;
+    box-shadow: 1px 1px 4px 1px #79B4B7;
+    color: #000000;
+    font-size: 1rem;
     font-weight: bold;
     border-radius: 6px;
 }
@@ -501,38 +502,39 @@ Animatie SVG
 ======================================== */
 #cartContainer {
     text-align: right;
-    background-color: #d8e7f9;
+    background-color: #F8F0DF;
     min-height: 90vh;
 }
 #total {
     margin-right: 10rem;
+    background-color: #FEFBF3;
+    padding: 0.3rem 0.5rem;
+    border-radius: 6px;
 }
 #table-body {
-    margin: auto;
-   
+    margin: auto;   
     padding: 1rem;
-    /* border: 1px solid #fb7813; */
-    width: 70rem;
+    width: 80rem;
     text-align: center;
 }
 #table-body thead tr{
-    background-color: #5f5f5f;
+    background-color: #9D9D9D;
     padding: 2rem 0rem;
     height: 2rem;
-    color: aliceblue;
+    color: #FEFBF3;
 }
 #cart-body td {
-    border-bottom: 1px solid #17706e;
-    background-color: #eee6e6;
+    border-bottom: 1px solid #9D9D9D;
+    background-color: #FEFBF3;
 }
 #cart-body img {
     width: 6rem;
 }
 #cart-body .title {
-    box-shadow: 1px 1px 5px 2px #b6eb7a;
+    background-color: #F8F0DF;
     padding: 0.6rem 2rem;
     cursor: pointer;
-    width: 15rem;
+    width: auto;
     font-size: 1rem;
     font-weight: bold;
     border: none;
@@ -540,8 +542,7 @@ Animatie SVG
     border-radius: 6px;
 }
 #cart-body .delete:hover, .title:hover {
-    background-color: #fb7813;
-    color: #f7f7ee;
+   background-color: #79B4B7;
 }
 #cart-body .delete {
     /* box-shadow: 1px 1px 5px 2px #b6eb7a; */
@@ -556,6 +557,33 @@ Animatie SVG
     color: red;
 }
 
+#cart-body #quantity {
+    background-color: #F8F0DF;
+    box-shadow: 0px 0px 0px 0px #5f5f5f;
+}
+
+.modal {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30rem;
+    height: 12rem;
+    background-color: #FEFBF3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0.5rem;
+    display: none;
+}
+.modal button {
+    padding: 0.3rem 1.6rem;
+    border: none;
+    background-color: #79B4B7;
+    border-radius: 6px;
+    cursor: pointer;
+}
 /* ===============================
 ==========Contact=============
 ============================== */
@@ -566,7 +594,7 @@ Animatie SVG
     flex-direction: row-reverse;
     justify-content: center;
     padding: 6rem;
-    background-color: #d8e7f9;
+    background-color: #F8F0DF;
    
 }
 

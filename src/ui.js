@@ -13,7 +13,11 @@ class UI {
 		this.quantity = document.getElementById('quantity');
         this.total = document.getElementById('total');
         this.subtotal = document.getElementById('subtotal');
+		this.modal = document.querySelector('.modal');
+		this.detCont = document.querySelector('#output')
 	}
+
+
 	// Get products on index page
 	showProducts(products) {
 		let output = '';
@@ -81,8 +85,8 @@ class UI {
 				count = 1;
 			}
 			addProductsInLocalStorage(product, count);
-			alert("Produsul a fost adaugat in cos")
-
+			this.modal.style.display = "flex";
+			this.detCont.style.opacity = "20%"
 		  });	
 			  
 		});

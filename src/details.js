@@ -9,3 +9,9 @@ window.onload = () => {
 	}
 }
 
+
+const modal =document.querySelector('.modal')
+const cancelBtn = document.querySelector('#cancel')
+cancelBtn.addEventListener('click', () => {
+	modal.style.display = "none"
+})
