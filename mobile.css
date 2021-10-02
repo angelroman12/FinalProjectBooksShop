@@ -1,4 +1,4 @@
-@media(max-width: 500px) {
+@media(max-width: 480px) {
     * {
         box-sizing: border-box;
         margin: 0px;
@@ -47,18 +47,42 @@
         width: 500px;
         margin-top: 1rem;
     }
-    .filters {
-        width: 100%;
-        display: flex;
-        margin: auto;
-        margin-bottom: 0.6rem;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin-left: 4rem;
+    .filterAndSearch {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
     }
+    .filters {
+       margin: 0px auto;
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       align-items: flex-end;
+       justify-content: flex-end;
+       margin: 2rem 0;
+    }
+
     .filtrareBtn {
-        width: 10rem;
+       width: 10rem;
+        margin: auto;
+    }
+    .src {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #search {
+        width: 20rem;
+        height: 2rem;
+        margin-bottom: 3rem;
+        border-radius: 6px;
+        border: none;
+        background-color: #79B4B7;
+        padding: 0.3rem;
+        color: #000000;
     }
     .name-logo {
     display: flex;

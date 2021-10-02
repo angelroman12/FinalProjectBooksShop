@@ -228,7 +228,23 @@ Animatie SVG
     background-color: #5f5f5f;
     color: #79B4B7;
 }
-
+.src {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#search {
+    width: 30%;
+    height: 2rem;
+    margin-bottom: 3rem;
+    border-radius: 6px;
+    border: none;
+    background-color: #79B4B7;
+    padding: 0.3rem;
+    color: #000000;
+}
 #products {
     width: 1000px;    
     margin: auto;

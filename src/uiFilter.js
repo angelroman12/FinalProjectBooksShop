@@ -120,6 +120,43 @@ class UIfilter {
 	   this.productsDiv.innerHTML += output;
    });
 	}
+	// find(products){
+	//  	let bookTitle =	products.find(product => product.title === this.searchInput.value)
+	// 	let myArray = []
+	// 	console.log(bookTitle)
+	// 	let output = ''
+	// 	myArray.push(bookTitle)
+	// 	myArray.map((product) => {
+	// 		output =
+	// 		`
+	// 		<div class="card">
+	// 		<a href="details.html?id=${product.id}" ><img src="${product.picture}"> </a>
+	// 		<h4> ${product.author}</h4>
+	// 		<h5>${product.title}</h5>
+	// 		<p>${product.price} ${product.curency} </p> 
+	// 		<a href="details.html?id=${product.id}"> <button class="det add-cart"> Detalii</button> </a>					
+	// 		</div>            
+	// 	   `;
+	// 	this.productsDiv.innerHTML += output;
+	// 	})
+	// }
+	findFilter(products) {
+		let authors = products.filter(autor => autor.author === this.searchInput.value || autor.title === this.searchInput.value)
+		let output = '';
+		authors.forEach((product) => {
+			output =
+				`
+				<div class="card">
+				<a href="details.html?id=${product.id}" ><img src="${product.picture}"> </a>
+				<h4> ${product.author}</h4>
+				<h5>${product.title}</h5>
+				<p>${product.price} ${product.curency} </p> 
+				<a href="details.html?id=${product.id}"> <button class="det add-cart"> Detalii</button> </a>					
+				</div>            
+			   `;
+		this.productsDiv.innerHTML += output;
+	});
+	}
 }
 
 export const uiFilter = new UIfilter();

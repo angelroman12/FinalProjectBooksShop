@@ -59,7 +59,7 @@ class UI {
 			`<div class="details">		
 					<div class="bookPic">
 						<img src=${product.picture}>
-						<div><p>${product.stoc}</p>	</div>
+						
 					</div>
 					<div class="bookDescription">
 						<h5>Descriere:</h5><p>  ${product.details} </p>					
