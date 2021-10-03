@@ -16,6 +16,7 @@ class UIfilter {
 		this.modal = document.querySelector('.modal');
 		this.detCont = document.querySelector('#output')
 		this.searchInput = document.getElementById('search')
+		this.neexistent = document.getElementById('neexistent')
 	}
 
 	cheap(products) {
@@ -141,7 +142,8 @@ class UIfilter {
 	// 	})
 	// }
 	findFilter(products) {
-		let authors = products.filter(autor => autor.author === this.searchInput.value || autor.title === this.searchInput.value)
+		let authors = products.filter(autor => autor.author === this.searchInput.value || autor.title === this.searchInput.value)	
+		if(authors){
 		let output = '';
 		authors.forEach((product) => {
 			output =
@@ -155,8 +157,11 @@ class UIfilter {
 				</div>            
 			   `;
 		this.productsDiv.innerHTML += output;
-	});
+		this.neexistent.style.display = 'flex'
+		});
 	}
+	}
+
 }
 
 export const uiFilter = new UIfilter();

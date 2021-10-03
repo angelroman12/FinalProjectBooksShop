@@ -245,6 +245,13 @@ Animatie SVG
     padding: 0.3rem;
     color: #000000;
 }
+
+#neexistent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
 #products {
     width: 1000px;    
     margin: auto;

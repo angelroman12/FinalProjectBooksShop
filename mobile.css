@@ -123,6 +123,7 @@
         background-color: #888888;
     }
     .card {
+        
         border: none;
         border-radius: 4px;
         width: 15rem;
@@ -240,6 +241,7 @@
         margin: auto;
         flex-direction: column;
         width: 500px;
+        min-height: 100%;
     }   
 
     #detailsContainer #output{     
@@ -249,8 +251,9 @@
         margin: auto;
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
-        height: auto;
+        min-height: auto;
         color: rgb(0, 0, 0);
+        
     }
 
     .bookPic{   
